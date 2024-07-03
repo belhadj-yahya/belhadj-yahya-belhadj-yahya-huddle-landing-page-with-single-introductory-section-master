@@ -1,0 +1,181 @@
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 17px -80px;
+    overflow:hidden ;
+}
+
+.img-1{
+    position: relative;
+    bottom: -45px;
+    left: 78px;
+    width: 200px;
+}
+.img-2{
+    position: relative;
+    bottom: -45px;
+    left: 78px;
+    width: 700px;
+    height: 470px;
+    top: 116px;
+}
+.div-title,
+.div-talk{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+   
+} 
+ .div-title{
+    align-content: center;
+    width: 550px;
+    height: 92px;
+    left: 859px;
+    text-align: start;
+    bottom: 300px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: white;
+    
+} 
+ .title{
+    font-size: 50px;
+}
+.div-talk{
+    align-content: center;
+    width: 550px;
+    height: 92px;
+    left: 859px;
+    text-align: start;
+    bottom: 260px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 28px;
+}
+form{
+    position: absolute;
+}
+.azar{
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+    font-size: 16px;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    position: relative;
+    bottom: -106px;
+    left: -1px;
+    width: 180px;
+    border-radius: 26px 26px 26px 26px;
+    height: 52px;
+    border: 1px solid transparent;
+    transition-duration: 0.5s;
+}
+
+.talk{
+    bottom: 15px;
+    left: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: white;
+    opacity: 75%;
+}
+.icons{
+    
+    display: flex;
+    position: relative;
+    left: -47px;
+    bottom: 124px;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+}
+.icon-1,
+.icon-2,
+.icon-3{
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 46px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-left: 23px;
+    transition-duration: 0.5s;
+}
+.icon-1-1,
+ .icon-2-2,
+ .icon-3-3{
+    color: white;
+    position: relative;
+    top: 5px;
+ }
+.azar:hover{
+    background-color: #e980e7;
+    color: white;
+}
+.icon-1:hover,
+.icon-2:hover,
+.icon-3:hover{
+    border-color: #e980e7;
+    background-color: #e980e7;
+}
+@media screen and (max-width:376px) {
+    body{
+        background-image: url(images/bg-mobile.svg);
+        position: relative;
+        background-position: 1px 0px;
+    }
+    .img-1{
+        left: 25px;
+        bottom: -17px;
+        width: 37%;
+    }
+    .img-2{
+    left: 20px;
+    width: 88%;
+    height: 256px;
+    top: 42px;
+    }
+    .icons{
+        left: -102px;
+        bottom: -145px;
+    }
+    .icon-1,
+    .icon-2,
+    .icon-3{
+        width: 37px;
+        height: 34px;
+    }
+    .icon-1-1,
+    .icon-2-2,
+    .icon-3-3{
+        width: 21px;
+    }
+    .azar{
+        left: 70px;
+        top: 119px;
+    }
+    .div-talk{
+        left: 13px;
+        top: 51px;
+        text-align: center;
+        width: 336px;
+    }
+    .talk{
+        font-size: 18px;
+    }
+    .div-title{
+        left: 36px;
+        top: 33px;
+        width: 264px;
+        text-align: center;
+    }
+    .title{
+        font-size: 25px;
+    }
+}
